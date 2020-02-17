@@ -20,7 +20,7 @@ export const MovieList = props => {
   }, []);
   
   return (
-    <Link to={`/movie/:movieId`} className="movie-list">
+    <Link to={`/movie/${movies.id}`} className="movie-list">
       {movies.map(movie => (
         <MovieDetails key={movie.id} movie={movie} />
       ))}
